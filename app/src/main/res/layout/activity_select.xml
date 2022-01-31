@@ -1,48 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
-        android:layout_margin="10dp"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/id_num"
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:visibility="invisible"
-            android:text="TextView"
-            tools:ignore="Suspicious0dp" />
-        <TextView
-            android:id="@+id/date"
+            android:layout_height="wrap_content"
+            android:background="#FFAC07"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint=  "@android:color/transparent"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메모장"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                android:textSize="20sp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
-            android:text="TextView"
-            tools:ignore="Suspicious0dp" />
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="6"
+                android:layout_height="40dp"
+                android:text="작성일 : "
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                tools:ignore="Suspicious0dp" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="TextView"
+                tools:ignore="Suspicious0dp" />
+        </LinearLayout>
+
         <EditText
             android:id="@+id/memo"
             android:layout_weight="1"
-            android:layout_width="fill_parent" android:layout_height="match_parent"
-
-            android:lines="5" android:gravity="top|left" android:inputType="textMultiLine"
-
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:lines="20"
+            android:layout_margin="10dp"
+            android:hint="작성"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
             android:scrollHorizontally="false"
-
             android:minWidth="10.0dip"
-
             android:maxWidth="5.0dip"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
+            android:layout_height="60dp"
             android:orientation="horizontal">
 
             <Button
@@ -51,14 +86,15 @@
                 android:id="@+id/update"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_height="match_parent">
-
             </Button>
             <Button
                 android:text="삭제"
                 android:layout_weight="1"
                 android:id="@+id/delete"
                 android:layout_gravity="center"
+                android:layout_margin="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 

@@ -20,7 +20,6 @@ class RecyclerViewAdapter internal constructor(private var context: Context, var
 
     // inner =비정적 중첩함수
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val id_num = itemView.id_num
         val date = itemView.date
         val memo = itemView.memo
 
@@ -34,7 +33,6 @@ class RecyclerViewAdapter internal constructor(private var context: Context, var
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val num = users[position]
-        holder.id_num.text = num.id.toString()
         holder.date.text = num.date.toString()
         holder.memo.text = num.memo
 
@@ -44,7 +42,8 @@ class RecyclerViewAdapter internal constructor(private var context: Context, var
                 putExtra("date",num.date.toString())
                 putExtra("memo",num.memo.toString())
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            }.run { context.startActivity(this)}
+                addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            }.run {context.startActivity(this)}
         }
     }
 

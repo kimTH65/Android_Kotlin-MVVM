@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         setSupportActionBar(binding.toolbar)
+        val ab = supportActionBar!!
+        ab.setDisplayShowTitleEnabled(false)
 
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.framelayout,Fragment_Main())
@@ -52,10 +54,6 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_add -> {
                 fragmentSelect(Fragment_Add())
-                return true
-            }
-            R.id.action_trash-> {
-                fragmentSelect(Fragment_Trash())
                 return true
             }
             else -> {

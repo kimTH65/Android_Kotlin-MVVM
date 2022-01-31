@@ -19,4 +19,10 @@ class Repository(mDatabase: AppDatabase) {
         dao.delete(entity)
     }
 
+    @Suppress("RedundantSuspendModifier")
+    @WorkerThread
+    suspend fun update(entity: Entity) {
+        dao.update(entity)
+    }
+
 }

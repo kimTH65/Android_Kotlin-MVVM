@@ -24,8 +24,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
 
-    fun deleteAll(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
+    fun delete(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         Repository.delete(entity)
+    }
+
+    fun update(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
+        Repository.update(entity)
     }
 
     fun getAll(): LiveData<List<Entity>>{
