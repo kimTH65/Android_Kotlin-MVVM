@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,42 +25,44 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-        binding.viewModel = viewModel
 
-        binding.toolbar.setSupportActionBar(menu)
-        binding.framelayout
+        setSupportActionBar(binding.toolbar)
+
         val transaction = supportFragmentManager.beginTransaction()
-        var fragmentName = Fragment_Main()
-        transaction.add(R.id.framelayout,fragmentName)
+        transaction.add(R.id.framelayout,Fragment_Main())
         transaction.commit()
-
-
-        /*val mAdapter = RecyclerViewAdapter(this, viewModel)
-        recyclerview.apply {
-            adapter = mAdapter
-            layoutManager = LinearLayoutManager(applicationContext)
-        }
-
-        viewModel.allUsers.observe(this, Observer { users ->
-            // Update the cached copy of the users in the adapter.
-            users?.let { mAdapter.setUsers(it) }
-        })
-
-        val onlyDate: LocalDate = LocalDate.now()
-
-        button.setOnClickListener{
-            lifecycleScope.launch(Dispatchers.IO) {
-                viewModel.insert(
-                    Entity(
-                        0, onlyDate.toString(),edit.text.toString())
-                )
-            }
-
-        }*/
 
     }
 
-
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val menuInflater = menuInflater
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+    private fun fragmentSelect(frag : Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.framelayout,frag)
+        transaction.commit()
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.getItemId()) {
+            R.id.action_list -> {
+                fragmentSelect(Fragment_Main())
+                return true
+            }
+            R.id.action_add -> {
+                fragmentSelect(Fragment_Add())
+                return true
+            }
+            R.id.action_trash-> {
+                fragmentSelect(Fragment_Trash())
+                return true
+            }
+            else -> {
+                return super.onOptionsItemSelected(item)
+            }
+        }
+    }
 
 
 }

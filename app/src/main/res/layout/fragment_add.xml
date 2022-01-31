@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white"
         android:layout_margin="10dp"
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/add_memo"
+            android:layout_weight="1"
+            android:layout_width="fill_parent" android:layout_height="match_parent"
 
             android:lines="5" android:gravity="top|left" android:inputType="textMultiLine"
 
@@ -25,14 +25,16 @@
             android:minWidth="10.0dip"
 
             android:maxWidth="5.0dip"/>
-
         <Button
-            android:text="button"
-            android:id="@+id/button"
+            android:text="추가"
+            android:layout_weight="10"
+            android:id="@+id/add"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
         </Button>
+
 
     </LinearLayout>
 </LinearLayout>

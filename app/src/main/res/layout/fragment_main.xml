@@ -9,34 +9,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"><LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:backgroundTint="@color/black"
-        android:background="@color/black"
-        android:layout_margin="10dp"
-        tools:ignore="MissingConstraints">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="dsfsdfsdf"/>
-        <EditText
-            android:layout_weight="1"
-            android:id="@+id/edit"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="할 일"/>
-
-        <Button
-            android:text="button"
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-        </Button>
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="검색"/>
+            <Button
+                android:text="검색"
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
