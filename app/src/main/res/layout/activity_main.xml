@@ -9,51 +9,34 @@
             type="com.example.memo.viewModel.MainViewModel" />
     </data>
 
-
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="10dp">
+            android:background="#FFAC07"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-            <EditText
-                android:layout_weight="1"
-                android:id="@+id/edit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="할 일"/>
+        </androidx.appcompat.widget.Toolbar>
 
-            <Button
-                android:text="button"
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-            </Button>
-
-        </LinearLayout>
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
+        <FrameLayout
+            android:id="@+id/framelayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="18dp"
-            android:padding="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/btnAdd"
-            app:layout_constraintStart_toEndOf="@+id/btnAdd"
-            app:layout_constraintTop_toBottomOf="@+id/add_button"
-            tools:listitem="@layout/recycler_item" />
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
     </LinearLayout>
+
+
+
 
 </layout>

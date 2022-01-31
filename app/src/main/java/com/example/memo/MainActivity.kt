@@ -2,6 +2,8 @@ package com.example.memo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -24,7 +26,15 @@ class MainActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         binding.viewModel = viewModel
 
-        val mAdapter = RecyclerViewAdapter(this, viewModel)
+        binding.toolbar.setSupportActionBar(menu)
+        binding.framelayout
+        val transaction = supportFragmentManager.beginTransaction()
+        var fragmentName = Fragment_Main()
+        transaction.add(R.id.framelayout,fragmentName)
+        transaction.commit()
+
+
+        /*val mAdapter = RecyclerViewAdapter(this, viewModel)
         recyclerview.apply {
             adapter = mAdapter
             layoutManager = LinearLayoutManager(applicationContext)
@@ -45,7 +55,11 @@ class MainActivity : AppCompatActivity() {
                 )
             }
 
-        }
+        }*/
 
     }
+
+
+
+
 }

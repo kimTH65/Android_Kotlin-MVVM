@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+            android:lines="5" android:gravity="top|left" android:inputType="textMultiLine"
+
+            android:scrollHorizontally="false"
+
+            android:minWidth="10.0dip"
+
+            android:maxWidth="5.0dip"/>
+
+        <Button
+            android:text="button"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

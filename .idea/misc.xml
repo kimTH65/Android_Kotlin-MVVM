@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/activity_main.xml" value="0.26979166666666665" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/frag_add.xml" value="0.1716485507246377" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/frag_main.xml" value="0.16822916666666668" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/fragment_add.xml" value="0.16197916666666667" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/fragment_blank.xml" value="0.16354166666666667" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/fragment_trash.xml" value="0.16197916666666667" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/layout/recycler_item.xml" value="0.2677083333333333" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/menu/menu.xml" value="0.16197916666666667" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/menu/search.xml" value="0.16197916666666667" />
+        <entry key="..\:/andMvvmGit/app/src/main/res/menu/toolbar_menu.xml" value="0.21354166666666666" />
         <entry key="..\:/mvvmGit/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/mvvmGit/app/src/main/res/layout/recycler_item.xml" value="0.1" />
       </map>
