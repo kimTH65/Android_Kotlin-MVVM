@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.memo.databinding.FragmentAddBinding
 import com.example.memo.model.room.Entity
@@ -15,6 +14,7 @@ import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.time.LocalDate
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class Fragment_Add : Fragment() {
     lateinit var home_activity: MainActivity
@@ -30,7 +30,7 @@ class Fragment_Add : Fragment() {
         home_activity = context as MainActivity
 
         val onlyDate: LocalDate = LocalDate.now()
-        val viewModel: MainViewModel by viewModels()
+        val viewModel: MainViewModel by viewModel()
         binding.add.setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
                 viewModel.insert(
