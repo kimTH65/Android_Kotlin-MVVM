@@ -1,3 +1,2 @@
-# Kotlin-MVVM
-
-mvvm : room, liveData, viewModel, Recyclerview, dataBinding,Koin(DI) <br>
+# MVVM Pattern in Android(Kotlin)
+Skill : MVVM Pattern, room, liveData, viewModel, Recyclerview, dataBinding, Koin(DI)
