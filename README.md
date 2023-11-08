@@ -16,7 +16,13 @@
 
 <h5>Manifest : Android 앱에 대한 중요한 메타 데이터가 포함된 XML</h5>
 
-<div align="center"><h6>app/src/main/AndroidManifest.xml</div>
+<div align="center">
+ <h6>
+  <a href="app/src/main/AndroidManifest.xml">
+   app/src/main/AndroidManifest.xml
+  </a>
+ </h6>
+</div>
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -53,7 +59,12 @@
 
 <h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, Module 전역함수를 사용해서 Koin 모듈을 선언</h5>
 
-<div align="center"><h6>app/src/main/java/com/example/memo/koin/MyApplication.kt</div>
+<div align="center">
+ <h6>
+  <a href="app/src/main/java/com/example/memo/koin/MyApplication.kt">
+   app/src/main/java/com/example/memo/koin/MyApplication.kt
+  </a>
+ </div>
 
 ```
 package com.example.memo.koin
@@ -94,7 +105,11 @@ class MyApplication : Application() {
 
 <div align="center">
     <h5>Entity</h5>
-    <h6>app/src/main/java/com/example/memo/model/room/Entity.kt</h6>
+    <h6>
+     <a href="app/src/main/java/com/example/memo/model/room/Entity.kt">
+      app/src/main/java/com/example/memo/model/room/Entity.kt
+     </a>
+    </h6>
 </div>
 
 ```
@@ -114,7 +129,11 @@ data class Entity(
 
 <div align="center">
     <h5>DAO(Data Access Object)</h5>
-    <h6>app/src/main/java/com/example/memo/model/room/DAO.kt</h6>
+    <h6>
+     <a href="app/src/main/java/com/example/memo/model/room/DAO.kt">
+      app/src/main/java/com/example/memo/model/room/DAO.kt
+     </a>
+    </h6>
 </div>
 
 ```
@@ -149,7 +168,11 @@ interface DAO {
 
 <div align="center">
     <h5>Room Database</h5>
-    <h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</h6>
+    <h6>
+     <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
+      app/src/main/java/com/example/memo/model/room/AppDatabase.kt
+     </a>
+    </h6>
 </div>
 
 ```
@@ -192,7 +215,11 @@ abstract class AppDatabase : RoomDatabase() {
 
 <div align="center">
     <h5>Repository</h5>
-    <h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</h6>
+    <h6>
+     <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
+      app/src/main/java/com/example/memo/model/room/AppDatabase.kt
+     </a>
+    </h6>
 </div>
 
 ```
@@ -229,7 +256,12 @@ class Repository(mDatabase: AppDatabase) {
 
 <h3>4. ViewModel</h3>
 
-<div align="center"><h6>app/src/main/java/com/example/memo/viewModel/MainViewModel.kt</div>
+<div align="center">
+ <h6>
+  <a href="app/src/main/java/com/example/memo/viewModel/MainViewModel.kt">
+   app/src/main/java/com/example/memo/viewModel/MainViewModel.kt
+  </a>
+ </div>
 
 ```
 package com.example.memo.viewModel
