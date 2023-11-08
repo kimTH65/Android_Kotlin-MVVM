@@ -310,7 +310,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
 <div align="center">
     <h5>Activity, Fragment</h5>
-    <h6>app/src/main/java/com/example/memo/~</h6>
+    <h6>
+     <a href="app/src/main/java/com/example/memo">
+      app/src/main/java/com/example/memo/~
+     </a>
+    </h6>
 </div>
 
 ```
@@ -371,7 +375,11 @@ class Fragment_Main : Fragment() {
 
 <div align="center">
     <h5>XML</h5>
-    <h6>app/src/main/res/~</h6>
+    <h6>
+     <a href="app/src/main/res">
+      app/src/main/res/~
+     </a>
+    </h6>
 </div>
 
 ```
