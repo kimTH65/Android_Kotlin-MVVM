@@ -1,6 +1,10 @@
 # MVVM Pattern in Android(Kotlin)
-Skill : MVVM Pattern, room, liveData, viewModel, Recyclerview, dataBinding, Koin(DI)
 
+ - MVVM Pattern,Observer Pattern사용
+ - Room(로컬 데이터베이스) 를 LiveData, ViewModel, Observer메소드를 이용하여 실시간으로 UI변경
+ - Recyclerview, dataBinding 등등 사용
+ - DI(Dependency injection)으로 Koin사용
+  
 #
 
 <h3>1. Manifest</h3>
