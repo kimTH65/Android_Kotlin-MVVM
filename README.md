@@ -83,9 +83,7 @@ class MyApplication : Application() {
 
 <h3>3. Model</h3>
 
-<h5>　Entity</h5>
-
-<div align="center"><h6>app/src/main/java/com/example/memo/model/room/Entity.kt</div>
+<div align="center"><h5>Entity</h5><h6>app/src/main/java/com/example/memo/model/room/Entity.kt</div>
 
 ```
 package com.example.memo.model.room
@@ -102,9 +100,7 @@ data class Entity(
 )
 ```
 
-<h5>　DAO(Data Access Object)</h5>
-
-<div align="center"><h6>app/src/main/java/com/example/memo/model/room/DAO.kt</div>
+<div align="center"><h5>DAO(Data Access Object)</h5><br><h6>app/src/main/java/com/example/memo/model/room/DAO.kt</div>
 
 ```
 package com.example.memo.model.room
@@ -136,9 +132,7 @@ interface DAO {
 }
 ```
 
-<h5>　Room Database</h5>
-
-<div align="center"><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
+<div align="center"><h5>Room Database</h5><br><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
 
 ```
 package com.example.memo.model.room
@@ -178,9 +172,7 @@ abstract class AppDatabase : RoomDatabase() {
 }
 ```
 
-<h5>　Repository</h5>
-
-<div align="center"><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
+<div align="center"><h5>Repository</h5><br><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
 
 ```
 package com.example.memo.model.room
