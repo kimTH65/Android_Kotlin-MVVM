@@ -83,7 +83,10 @@ class MyApplication : Application() {
 
 <h3>3. Model</h3>
 
-<div align="center"><h5>Entity</h5><h6>app/src/main/java/com/example/memo/model/room/Entity.kt</div>
+<div align="center">
+    <h5>Entity</h5>
+    <h6>app/src/main/java/com/example/memo/model/room/Entity.kt</h6>
+</div>
 
 ```
 package com.example.memo.model.room
@@ -100,7 +103,10 @@ data class Entity(
 )
 ```
 
-<div align="center"><h5>DAO(Data Access Object)</h5><br><h6>app/src/main/java/com/example/memo/model/room/DAO.kt</div>
+<div align="center">
+    <h5>DAO(Data Access Object)</h5>
+    <h6>app/src/main/java/com/example/memo/model/room/DAO.kt</h6>
+</div>
 
 ```
 package com.example.memo.model.room
@@ -132,7 +138,10 @@ interface DAO {
 }
 ```
 
-<div align="center"><h5>Room Database</h5><br><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
+<div align="center">
+    <h5>Room Database</h5>
+    <h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</h6>
+</div>
 
 ```
 package com.example.memo.model.room
@@ -172,7 +181,10 @@ abstract class AppDatabase : RoomDatabase() {
 }
 ```
 
-<div align="center"><h5>Repository</h5><br><h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</div>
+<div align="center">
+    <h5>Repository</h5>
+    <h6>app/src/main/java/com/example/memo/model/room/AppDatabase.kt</h6>
+</div>
 
 ```
 package com.example.memo.model.room
@@ -255,9 +267,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
 <h3>5. View</h3>
 
-<h5>Activity, Fragment</h5>
-
-<div align="center"><h6>app/src/main/java/com/example/memo/~</div>
+<div align="center">
+    <h5>Activity, Fragment</h5>
+    <h6>app/src/main/java/com/example/memo/~</h6>
+</div>
 
 ```
 ...
@@ -279,7 +292,7 @@ class MainActivity : AppCompatActivity() {
 ...
 ```
 
-<h5>이하처럼 ViewModel사용</h5>
+<h5>　이하처럼 ViewModel사용</h5>
 
 ```
 ...
@@ -315,9 +328,10 @@ class Fragment_Main : Fragment() {
 ...
 ```
 
-<h5>XML</h5>
-
-<div align="center"><h6>app/src/main/res/~</div>
+<div align="center">
+    <h5>XML</h5>
+    <h6>app/src/main/res/~</h6>
+</div>
 
 ```
 ...
