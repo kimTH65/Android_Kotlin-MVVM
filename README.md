@@ -42,7 +42,7 @@ Skill : MVVM Pattern, room, liveData, viewModel, Recyclerview, dataBinding, Koin
 
 <h3>2. MyApplication</h3>
 
-<h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, Koin 정의</h5>
+<h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, module 전역함수를 사용해서 Koin 모듈을 선언</h5>
 
 <div align="center"><h6>app/src/main/java/com/example/memo/koin/MyApplication.kt</div>
 
