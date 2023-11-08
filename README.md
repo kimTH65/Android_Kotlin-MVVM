@@ -216,8 +216,6 @@ class Repository(mDatabase: AppDatabase) {
 
 <h3>4. ViewModel</h3>
 
-<h5>ViewModel: </h5>
-
 <div align="center"><h6>app/src/main/java/com/example/memo/viewModel/MainViewModel.kt</div>
 
 ```
