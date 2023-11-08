@@ -13,6 +13,8 @@
 <hr>
 <br>
 
+#
+
 <h3>1. Manifest</h3>
 
 <h5>Manifest : Android 앱에 대한 중요한 메타 데이터가 포함된 XML</h5>
