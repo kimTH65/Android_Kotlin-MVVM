@@ -78,3 +78,60 @@ class MyApplication : Application() {
     }
 }
 ```
+
+#
+
+<h3>3. Model</h3>
+
+<h5>　Entity</h5>
+
+<div align="center"><h6>app/src/main/java/com/example/memo/model/room/Entity.kt</div>
+
+```
+package com.example.memo.model.room
+
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "Users")
+data class Entity(
+    @PrimaryKey(autoGenerate = true) val id: Int,
+    @ColumnInfo(name = "date") val date: String,
+    @ColumnInfo(name = "memo") val memo: String?,
+)
+```
+
+<h5>　DAO(Data Access Object)</h5>
+
+<div align="center"><h6>app/src/main/java/com/example/memo/model/room/DAO.kt</div>
+
+```
+package com.example.memo.model.room
+
+import androidx.lifecycle.LiveData
+import androidx.room.*
+
+@Dao
+interface DAO {
+    // 데이터 베이스 불러오기
+    @Query("SELECT * from users ORDER BY id ASC")
+    fun loadAllUsers(): LiveData<List<Entity>>
+
+    // 데이터 추가
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(entity: Entity)
+
+    // 데이터 전체 삭제
+    @Query("DELETE FROM users")
+    fun deleteAll()
+
+    // 데이터 업데이트
+    @Update
+    fun update(entity: Entity);
+
+    // 데이터 삭제
+    @Delete
+    fun delete(entity: Entity);
+}
+```
