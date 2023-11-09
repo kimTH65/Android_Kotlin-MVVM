@@ -67,17 +67,9 @@
  </div>
 
 ```
-package com.example.memo.koin
-
-import android.app.Application
-import com.example.memo.Fragment_Add
-import com.example.memo.model.room.Repository
-import com.example.memo.viewModel.MainViewModel
-import org.koin.android.ext.koin.androidContext
-import org.koin.android.ext.koin.androidLogger
-import org.koin.androidx.viewmodel.dsl.viewModel
-import org.koin.core.context.startKoin
-import org.koin.dsl.module
+  .
+  .
+  .
 
 class MyApplication : Application() {
     override fun onCreate() {
@@ -113,11 +105,9 @@ class MyApplication : Application() {
 </div>
 
 ```
-package com.example.memo.model.room
-
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+  .
+  .
+  .
 
 @Entity(tableName = "Users")
 data class Entity(
@@ -137,10 +127,9 @@ data class Entity(
 </div>
 
 ```
-package com.example.memo.model.room
-
-import androidx.lifecycle.LiveData
-import androidx.room.*
+  .
+  .
+  .
 
 @Dao
 interface DAO {
@@ -176,13 +165,9 @@ interface DAO {
 </div>
 
 ```
-package com.example.memo.model.room
-import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
-import kotlinx.coroutines.CoroutineScope
-
+  .
+  .
+  .
 
 @Database(entities = arrayOf(Entity::class),  version = 1)
 abstract class AppDatabase : RoomDatabase() {
@@ -223,9 +208,9 @@ abstract class AppDatabase : RoomDatabase() {
 </div>
 
 ```
-package com.example.memo.model.room
-import androidx.annotation.WorkerThread
-import androidx.lifecycle.LiveData
+  .
+  .
+  .
 
 class Repository(mDatabase: AppDatabase) {
 
@@ -264,30 +249,18 @@ class Repository(mDatabase: AppDatabase) {
  </div>
 
 ```
-package com.example.memo.viewModel
-
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import org.koin.androidx.viewmodel.ext.android.viewModel
-import androidx.lifecycle.viewModelScope
-import com.example.memo.model.room.AppDatabase
-import com.example.memo.model.room.Entity
-import com.example.memo.model.room.Repository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import org.koin.java.KoinJavaComponent.inject
+  .
+  .
+  .
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     val Repository: Repository  =
         Repository(AppDatabase.getDatabase(application, viewModelScope))
     val allUsers: LiveData<List<Entity>> = Repository.allUsers
 
-
     fun insert(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         Repository.insert(entity)
     }
-
 
     fun delete(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         Repository.delete(entity)
@@ -318,7 +291,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 </div>
 
 ```
-...
+  .
+  .
+  .
+
 class MainActivity : AppCompatActivity() {
     private val viewModel: MainViewModel by viewModel()
 
@@ -334,13 +310,19 @@ class MainActivity : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.framelayout,Fragment_Main())
         transaction.commit()
-...
+  .
+  .
+  .
+
 ```
 
 <h5>　이하처럼 ViewModel사용</h5>
 
 ```
-...
+  .
+  .
+  .
+
 class Fragment_Main : Fragment() {
     lateinit var home_activity: MainActivity
     private var mBinding: FragmentMainBinding? = null
@@ -370,7 +352,10 @@ class Fragment_Main : Fragment() {
             // Update the cached copy of the users in the adapter.
             users?.let { mAdapter.setUsers(it) }
         })
-...
+  .
+  .
+  .
+
 ```
 
 <div align="center">
@@ -383,7 +368,10 @@ class Fragment_Main : Fragment() {
 </div>
 
 ```
-...
+  .
+  .
+  .
+
         <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/toolbar"
@@ -408,5 +396,8 @@ class Fragment_Main : Fragment() {
             android:layout_height="match_parent">
 
         </FrameLayout>
-...
+  .
+  .
+  .
+
 ```
