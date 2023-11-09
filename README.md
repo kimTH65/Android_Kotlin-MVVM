@@ -55,7 +55,7 @@
 
 #
 
-<h3>2. MyApplication</h3>
+<h3>2. Application</h3>
 
 <h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, Module 전역함수를 사용해서 Koin 모듈을 선언</h5>
 
