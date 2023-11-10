@@ -17,11 +17,11 @@
 <h5>Manifest : Android 앱에 대한 중요한 메타 데이터가 포함된 XML</h5>
 
 <div align="center">
- <h6>
+ <h5>
   <a href="app/src/main/AndroidManifest.xml">
    Manifest
   </a>
- </h6>
+ </h5>
 </div>
 
 ```
@@ -60,7 +60,7 @@
 <h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, Module 전역함수를 사용해서 Koin 모듈을 선언</h5>
 
 <div align="center">
- <h6>
+ <h5>
   <a href="app/src/main/java/com/example/memo/koin/MyApplication.kt">
    Application
   </a>
@@ -96,11 +96,11 @@ class MyApplication : Application() {
 <h3>3. Model</h3>
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/java/com/example/memo/model/room/Entity.kt">
       Entity
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
@@ -117,11 +117,11 @@ data class Entity(
 ```
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/java/com/example/memo/model/room/DAO.kt">
       DAO(Data Access Object)
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
@@ -154,11 +154,11 @@ interface DAO {
 ```
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
       Room Database
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
@@ -196,11 +196,11 @@ abstract class AppDatabase : RoomDatabase() {
 ```
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/java/com/example/memo/model/room/Repository.kt">
       Repository
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
@@ -238,7 +238,7 @@ class Repository(mDatabase: AppDatabase) {
 <h3>4. ViewModel</h3>
 
 <div align="center">
- <h6>
+ <h5>
   <a href="app/src/main/java/com/example/memo/viewModel/MainViewModel.kt">
    ViewModel
   </a>
@@ -278,11 +278,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 <h3>5. View</h3>
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/java/com/example/memo">
       Activity, Fragment
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
@@ -354,11 +354,11 @@ class Fragment_Main : Fragment() {
 ```
 
 <div align="center">
-    <h6>
+    <h5>
      <a href="app/src/main/res">
       XML
      </a>
-    </h6>
+    </h5>
 </div>
 
 ```
