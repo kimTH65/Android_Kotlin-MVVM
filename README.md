@@ -196,7 +196,6 @@ abstract class AppDatabase : RoomDatabase() {
 ```
 
 <div align="center">
-    <h5>Repository</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/Repository.kt">
       Repository
@@ -279,10 +278,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 <h3>5. View</h3>
 
 <div align="center">
-    <h5>Activity, Fragment</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo">
-      View
+      Activity, Fragment
      </a>
     </h6>
 </div>
@@ -356,7 +354,6 @@ class Fragment_Main : Fragment() {
 ```
 
 <div align="center">
-    <h5>XML</h5>
     <h6>
      <a href="app/src/main/res">
       XML
