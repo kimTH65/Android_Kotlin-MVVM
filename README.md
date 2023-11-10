@@ -62,7 +62,7 @@
 <div align="center">
  <h6>
   <a href="app/src/main/java/com/example/memo/koin/MyApplication.kt">
-   MyApplication.kt
+   Application
   </a>
  </div>
 
@@ -96,10 +96,9 @@ class MyApplication : Application() {
 <h3>3. Model</h3>
 
 <div align="center">
-    <h5>Entity</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/Entity.kt">
-      Entity.kt
+      Entity
      </a>
     </h6>
 </div>
@@ -118,10 +117,9 @@ data class Entity(
 ```
 
 <div align="center">
-    <h5>DAO(Data Access Object)</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/DAO.kt">
-      app/src/main/java/com/example/memo/model/room/DAO.kt
+      DAO(Data Access Object)
      </a>
     </h6>
 </div>
@@ -159,7 +157,7 @@ interface DAO {
     <h5>Room Database</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
-      AppDatabase.kt
+      Room Database
      </a>
     </h6>
 </div>
@@ -202,7 +200,7 @@ abstract class AppDatabase : RoomDatabase() {
     <h5>Repository</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/Repository.kt">
-      Repository.kt
+      Repository
      </a>
     </h6>
 </div>
@@ -244,7 +242,7 @@ class Repository(mDatabase: AppDatabase) {
 <div align="center">
  <h6>
   <a href="app/src/main/java/com/example/memo/viewModel/MainViewModel.kt">
-   MainViewModel.kt
+   ViewModel
   </a>
  </div>
 
