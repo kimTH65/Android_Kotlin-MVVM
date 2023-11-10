@@ -19,7 +19,7 @@
 <div align="center">
  <h6>
   <a href="app/src/main/AndroidManifest.xml">
-   app/src/main/AndroidManifest.xml
+   AndroidManifest.xml
   </a>
  </h6>
 </div>
@@ -62,7 +62,7 @@
 <div align="center">
  <h6>
   <a href="app/src/main/java/com/example/memo/koin/MyApplication.kt">
-   app/src/main/java/com/example/memo/koin/MyApplication.kt
+   MyApplication.kt
   </a>
  </div>
 
@@ -99,7 +99,7 @@ class MyApplication : Application() {
     <h5>Entity</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/Entity.kt">
-      app/src/main/java/com/example/memo/model/room/Entity.kt
+      Entity.kt
      </a>
     </h6>
 </div>
@@ -159,7 +159,7 @@ interface DAO {
     <h5>Room Database</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
-      app/src/main/java/com/example/memo/model/room/AppDatabase.kt
+      AppDatabase.kt
      </a>
     </h6>
 </div>
@@ -201,8 +201,8 @@ abstract class AppDatabase : RoomDatabase() {
 <div align="center">
     <h5>Repository</h5>
     <h6>
-     <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
-      app/src/main/java/com/example/memo/model/room/AppDatabase.kt
+     <a href="app/src/main/java/com/example/memo/model/room/Repository.kt">
+      Repository.kt
      </a>
     </h6>
 </div>
@@ -244,7 +244,7 @@ class Repository(mDatabase: AppDatabase) {
 <div align="center">
  <h6>
   <a href="app/src/main/java/com/example/memo/viewModel/MainViewModel.kt">
-   app/src/main/java/com/example/memo/viewModel/MainViewModel.kt
+   MainViewModel.kt
   </a>
  </div>
 
@@ -285,7 +285,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     <h5>Activity, Fragment</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo">
-      app/src/main/java/com/example/memo/~
+      View
      </a>
     </h6>
 </div>
@@ -362,7 +362,7 @@ class Fragment_Main : Fragment() {
     <h5>XML</h5>
     <h6>
      <a href="app/src/main/res">
-      app/src/main/res/~
+      XML
      </a>
     </h6>
 </div>
