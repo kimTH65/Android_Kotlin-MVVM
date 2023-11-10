@@ -19,7 +19,7 @@
 <div align="center">
  <h6>
   <a href="app/src/main/AndroidManifest.xml">
-   AndroidManifest.xml
+   Manifest
   </a>
  </h6>
 </div>
