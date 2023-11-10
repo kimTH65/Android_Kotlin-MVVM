@@ -154,7 +154,6 @@ interface DAO {
 ```
 
 <div align="center">
-    <h5>Room Database</h5>
     <h6>
      <a href="app/src/main/java/com/example/memo/model/room/AppDatabase.kt">
       Room Database
