@@ -11,7 +11,7 @@
  
  - Using MVVM Pattern,Observer Pattern<br>
  
- - Change UI in real time using Room(Local Database), LiveData, ViewModel, Observer Method<br>
+ - Update UI in real time using Room(Local Database), LiveData, ViewModel, Observer Method<br>
  
  - Using Recyclerview, dataBinding ...<br>
  
