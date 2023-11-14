@@ -320,7 +320,7 @@ class MainActivity : AppCompatActivity() {
 
 ```
 
-<h5>　이하처럼 ViewModel사용</h5>
+<h5>　以下のようにViewModelを使用</h5>
 
 ```
   .
