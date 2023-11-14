@@ -23,7 +23,7 @@
 
 <h3>1. Manifest</h3>
 
-<h5>Manifest : Android 앱에 대한 중요한 메타 데이터가 포함된 XML</h5>
+<h5>Manifest : XML with sensitive metadata for Android apps</h5>
 
 <div align="center">
  <h5>
@@ -66,7 +66,7 @@
 
 <h3>2. Application</h3>
 
-<h5>ApplicationClass : 어플리케이션내의 모든 컴포넌트에서 접근 가능, Module 전역함수를 사용해서 Koin 모듈을 선언</h5>
+<h5>ApplicationClass : Accessible from all components within the application, declaring the Koin module using the module global function</h5>
 
 <div align="center">
  <h5>
@@ -320,7 +320,7 @@ class MainActivity : AppCompatActivity() {
 
 ```
 
-<h5>　이하처럼 ViewModel사용</h5>
+<h5>　Use ViewModel as follows</h5>
 
 ```
   .
